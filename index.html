@@ -267,25 +267,56 @@
     .footer-items{
         padding-left: 107px;
         display: grid;
-        grid-template-columns: 16% 29% 9% 11%;
-        align-content: center;  
+        grid-template-columns: 30% 34% 15% ;
     }
     .footer-items p {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 36px;
         line-height: 49px;
     }
+    .footer-items .item-1 {
+       margin-right: 139px;
+    }
+    input {
+            display: block;
+            border: none;
+            background-color: #000000;
+            width: 65%;
+            padding-left: 0;
+            border-bottom: 1px solid #808080;
+            padding-bottom: 6px;
+        }
+    input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #808080;
+        }
+
+        ::-webkit-input-placeholder {
+            font: normal normal normal 18px/21px Gill Sans MT;
+            color: #A9A9A9;
+        }
+    
     .icons {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-end;
+        /* padding-right: 111px; */
         list-style: none;
+    }
+    .icons li {
+        /* padding: 44px; */
     }
     .icons i {
         color: #FFFFFF;
         height: 20px;
         width: 20px;
+    }
+    #item-3-contact {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        line-height: 34px;
     }
 </style>
 <body>
@@ -364,16 +395,17 @@
             </div>
             <div class="item-3">
                 <p>Contact us</p>
-                <p>(052) 611-5711 name.surname@companyname.com</p>
+                <p id="item-3-contact">(052) 611-5711 name.surname@companyname.com</p>
             </div>
-            
-            <ul class="icons" class="item-4">
+        </div>
+            <ul class="icons" >
                 <li><i class="fab fa-facebook-f "></i></li>
                 <li><i class="fab fa-linkedin-in "></i></li>
                 <li><i class="fab fa-instagram "></i></li>
                 <li><i class="fab fa-twitter "></i></li>
             </ul>
-        </div>
+            
+        
     </footer>
 </body>
 </html>
