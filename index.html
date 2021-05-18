@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <style>
     * {
@@ -256,18 +258,29 @@
         margin-top: 170px;
         height: 344px;
         background-color: #000000;
+        display: flex;
+        flex-direction: column;
     }
     span {
         color: #F5A623;
     }
-    .flex-item p {
+    .footer-items{
+        padding-left: 107px;
+        display: grid;
+        grid-template-columns: 16% 29% 9% 11%;
+        align-content: center;  
+    }
+    .footer-items p {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 36px;
         line-height: 49px;
     }
     .icons {
-        width: 184px;
-        height: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
     }
     .icons i {
         color: #FFFFFF;
@@ -281,7 +294,7 @@
             <h1>Virtual Reality Technology</h1>
         </div>
         <div class="right-column">
-            <a href="#">VR - Glassess <i class="fa fa-arrow-right"></i></a>
+            <span><a href="#">VR - Glassess <i class="fas fa-long-arrow-alt-right"></i></a></span>
         </div>
     </header>
     <main>
@@ -292,7 +305,7 @@
                 </div>
                 <div class="right-column">
                     <h2>We create your Future</h2>
-                    <a href="#">Know more <i class="fas fa-long-arrow-alt-right"></i></i></a>
+                    <a href="#">Know more <i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
             <div class="container-2">
@@ -341,20 +354,25 @@
         </div>
     </main>
     <footer>
-        <div class="flex-item">
-            <h3>Create new digital future</h3>
-        </div>
-        <div class="flex-item">
-            <p>Subscribe our <span>newsletter</span></p>
-            <input placeholder="E-mail" type="email" name="E-mail"><label for="email">Subscribe</label>
-        </div>
-        <div class="flex-item">
-            <p>Contact us</p>
-            <p>(052) 611-5711 name.surname@companyname.com</p>
-        </div>
-        <div class="flex-item icons">
-            <i class="fa fa-facebook-f"></i>
-
+        <div class="footer-items">
+            <div class="item-1">
+                <h3>Create new digital future</h3>
+            </div>
+            <div class="item-2">
+                <p>Subscribe our <span>newsletter</span></p>
+                <input placeholder="E-mail" type="email" name="E-mail"><label for="email">Subscribe</label>
+            </div>
+            <div class="item-3">
+                <p>Contact us</p>
+                <p>(052) 611-5711 name.surname@companyname.com</p>
+            </div>
+            
+            <ul class="icons" class="item-4">
+                <li><i class="fab fa-facebook-f "></i></li>
+                <li><i class="fab fa-linkedin-in "></i></li>
+                <li><i class="fab fa-instagram "></i></li>
+                <li><i class="fab fa-twitter "></i></li>
+            </ul>
         </div>
     </footer>
 </body>
