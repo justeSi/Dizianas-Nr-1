@@ -7,7 +7,8 @@
     <title>Dizainas Nr.1</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <style>
     * {
@@ -49,7 +50,8 @@
         
     }
     header .right-column i {
-        padding-left: 35px;
+        /* padding-left: 35px; */
+        
     }
     header .left-column h1 {
         font-family: 'Source Sans Pro', sans-serif;
@@ -87,6 +89,7 @@
         color: #000000;
         font-size: 72px;
         line-height: 103px;
+        
     }
     .container-1 .right-column h2 {
         
@@ -113,6 +116,7 @@
         
     }
     .media {
+        margin-top: 21px;
         width: 100%;
         height: 1274px;
         display: flex;
@@ -150,10 +154,10 @@
     }
     .container-2 .media .box-3 h3{
         color: #fff;
-        text-decoration: none;
         font-size: 51px;
         line-height: 72px;
         font-family: 'Source Sans Pro', sans-serif;
+        
     }
     .container-2 .media .box-3 a {
         
@@ -165,9 +169,110 @@
     }
     .container-3 {
         margin-top: 139px;
+        height: 100%;
+        /* height: 1827px; */
+        
+
+    }
+    .content {
+        margin-top: 21px;
+        display: grid;
+        grid-template-rows: 1fr 1.5fr 1fr;
+        row-gap: 170px;
+    }
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 51px;
+        line-height: 72px;
+        
+    }
+    .row-1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 57%;
+        height: auto;
+    }
+    .row-1 .left-column {
+        padding-left: 145px;
+        padding-right: 61px;
+    }
+    .row-1 .left-column p {
+        color: #06060673;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .row-1 .right-column {
+        
+        background: url(https://images.unsplash.com/photo-1601016029786-485f148b8a78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1115&q=80);
+        background-size: cover;
+        height: 357px;
+    }
+    .row-2 {
+        width: 100%;
+        /* height: 40%; */
+        background: url(https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+    }
+    .row-2 .left-text-box  {
+        width: 43%;
+        padding-top: 221px;
+        padding-left: 145px;
+        padding-right: 61px;
+    }
+    .row-2 .left-text-box h3 {
+        color: #FFFFFF;
+    }
+    .row-2 .left-text-box p {
+        color: #FFFFFF;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .row-3 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 57%;
+        height: auto;
+    }
+    .row-3 .left-column {
+        padding-left: 145px;
+        padding-right: 61px;
+    }
+    .row-3 .left-column p {
+        color: #06060673;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .row-3 .right-column {
+        
+        background: url(https://images.unsplash.com/photo-1601016029786-485f148b8a78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1115&q=80);
+        background-size: cover;
+        height: 357px;
     }
     footer {
-        /* height: 344px; */
+        color: #fff;
+        margin-top: 170px;
+        height: 344px;
+        background-color: #000000;
+    }
+    span {
+        color: #F5A623;
+    }
+    .flex-item p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .icons {
+        width: 184px;
+        height: 20px;
+    }
+    .icons i {
+        color: #FFFFFF;
+        height: 20px;
+        width: 20px;
     }
 </style>
 <body>
@@ -187,7 +292,7 @@
                 </div>
                 <div class="right-column">
                     <h2>We create your Future</h2>
-                    <a href="#">Know more <i class="fa fa-arrow-right"></i></a>
+                    <a href="#">Know more <i class="fas fa-long-arrow-alt-right"></i></i></a>
                 </div>
             </div>
             <div class="container-2">
@@ -198,7 +303,7 @@
                     <div class="media-box box-3">
                         <div class="box-3-txt">
                         <h3>Watch in Full HD</h3>
-                        <a href="#">Read more<i class="fa fa-arrow-right"></i></a></div>
+                        <a href="#">Read more<i class="fas fa-long-arrow-alt-right"></i></a></div>
                     </div>
                     <div class="media-box box-4"></div>
                 </div>
@@ -206,14 +311,29 @@
             <div class="container-3">
                 <h2>Advantages</h2>
                 <div class="content">
-                    <div class="row">
-
+                    <div class="row-1">
+                        <div class="left-column">
+                            <h3>Design</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint .</p>
+                        </div>
+                        <div class="right-column">
+                            
+                        </div>
                     </div>
-                    <div class="row">
-
+                    <div class="row-2">
+                        <div class="left-text-box">
+                                <h3>Performance</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint .</p>
+                        </div>
                     </div>
-                    <div class="row">
-
+                    <div class="row-3">
+                        <div class="left-column">
+                            <h3>Overview</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint ..</p>
+                        </div>
+                        <div class="right-column">
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -221,7 +341,21 @@
         </div>
     </main>
     <footer>
+        <div class="flex-item">
+            <h3>Create new digital future</h3>
+        </div>
+        <div class="flex-item">
+            <p>Subscribe our <span>newsletter</span></p>
+            <input placeholder="E-mail" type="email" name="E-mail"><label for="email">Subscribe</label>
+        </div>
+        <div class="flex-item">
+            <p>Contact us</p>
+            <p>(052) 611-5711 name.surname@companyname.com</p>
+        </div>
+        <div class="flex-item icons">
+            <i class="fa fa-facebook-f"></i>
 
+        </div>
     </footer>
 </body>
 </html>
