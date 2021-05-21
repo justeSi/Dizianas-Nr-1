@@ -13,9 +13,8 @@
         margin: 0 auto;
         }
     header {
-        display: -ms-grid;
         display: grid;
-        grid-template-columns: minmax(150px, 56%) 1fr;
+        grid-template-columns: 56% 1fr;
         width: 100%;
     }
     header .left-column {
@@ -30,6 +29,7 @@
         font-size: 1.3889rem;
         line-height: 2rem;
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
         position: absolute;
         bottom: 4.9444rem;
         right: 6.1111rem;
@@ -73,9 +73,9 @@
     header  ul > li > a:hover {
         color: #F5A623;
     }
-    header  ul > li > a:focus {
+    /* header  ul > li > a:focus {
         color: #F5A623;
-    }
+    } */
     .active {
         color: #F5A623;
     }
@@ -86,13 +86,11 @@
         margin-left: 6.1111rem;
     }
     .grid-container {
-        display: -ms-grid;
         display: grid;
         grid-template-rows: auto auto auto;
     }
     .container-1 {
         width: 81%;
-        display: -ms-grid;
         display: grid;
         grid-template-columns: 53% 1fr;
     }
@@ -106,15 +104,16 @@
     }
     h2 {
         font-family: 'Source Sans Pro', sans-serif;
-        color: #000000;
+        color: #060606;
         font-size: 4rem;
         line-height: 5.7222rem;
+        font-weight: 900;
         
     }
     .container-1 .right-column h2 {
-        
         padding-top: 10.1111rem;
         padding-left: 3.2778rem;
+        font-weight: 900;
         
     }
 
@@ -125,6 +124,7 @@
         line-height: 2rem;
         font-family: 'Source Sans Pro', sans-serif;
         padding-left: 3.2778rem;
+        font-weight: 900;
         
     }
     .container-2 {
@@ -135,6 +135,7 @@
         width: 100%;
         height: 100%;
         float: left;
+        margin-top: 1.1667rem;
     }
     .media-box {
         width: 50%;
@@ -152,7 +153,6 @@
     }
     
     .container-2 .media .box-3 {
-        display: -ms-grid;
         display: grid;
         place-items: center;
         background-color: #69779b;
@@ -169,6 +169,7 @@
         font-size: 2.8333rem;
         line-height: 4rem;
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
         
     }
     .container-2 .media .box-3 a {
@@ -177,11 +178,12 @@
         font-size: 1.3889rem;
         line-height: 2rem;
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
         margin-left: 28%;
         
     }
     .container-3 {
-        padding-top: 7.7222rem;
+        padding-top: 12.7222rem;
         height: 100%;
     }
    
@@ -195,6 +197,7 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 2.8333rem;
         line-height: 4rem;
+        font-weight: 900;
         
     }
     .row-1 {
@@ -247,7 +250,7 @@
         padding-bottom: 1.3889rem;
     }
     .row-2 .left-text-box p {
-        color: #FFFFFF;
+        color: #FFFFFF99;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 1rem;
         line-height: 1.8889rem;
@@ -332,6 +335,7 @@
         border: none;
         cursor: pointer;
         color: #FFFFFF;
+        font-weight: 700;
     }
    
     label > i {
@@ -371,4 +375,7 @@
         line-height: 0;
         padding-left: 1.1111rem;
         
+    }
+    footer p:not(#item-3-contact) {
+        font-weight: 700;
     }
