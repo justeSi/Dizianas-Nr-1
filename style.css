@@ -186,7 +186,7 @@
         padding-top: 12.7222rem;
         height: 100%;
     }
-   
+    
     .content {
         margin-top: 1.1667rem;
         display: grid;
@@ -414,8 +414,7 @@
         #item-3-contact,
         .row-1 .left-column p,
         .row-2 .left-text-box p,
-        .row-3 .left-column p
-         {
+        .row-3 .left-column p {
         font-size: 1rem;
         }
 
@@ -444,8 +443,7 @@
         #item-3-contact,
         .row-1 .left-column p,
         .row-2 .left-text-box p,
-        .row-3 .left-column p
-        {
+        .row-3 .left-column p {
         font-size: 1.5rem;
         }
         .row-1 .left-column,
@@ -459,7 +457,7 @@
             padding-top: 0.5556rem;
         }
         .footer-items {
-            padding: 10px;
+            padding: 0.5556rem;
         }
         .footer-items {
             width: 70%;
@@ -471,17 +469,71 @@
         .icons {
             width: 30%;
             position: absolute;
-            right: 10px;
-            top: 10px;
+            right: 0.5556rem;
+            top: 0.5556rem;
             text-align: center;
         }
         .icons i {
-            padding: 10px;
+            padding: 0.5556rem;
             font-size: x-large;
         }
         .item-1,
         .item-2,
         .item-3 {
-            padding-bottom: 3px;
+            padding-bottom: 0.1667rem;
+        }
+    }
+    @media all and (max-width: 670px)  {
+        html {
+            font-size: 8px;
+        }
+
+        .icons i {
+            font-size: medium;
+        }
+        .icons {
+            padding-right: 20px;
+        }
+        a,
+        header .right-column a,
+        .container-1 .right-column a,
+        .container-2 .media  .box-3 a,
+        #item-3-contact{
+            font-size: 17px;
+        }
+    }
+    @media all and (max-width: 513px) {
+        .container-1 {
+            display: block;
+        }
+        .media-box {
+            width: 100%;
+        }
+        .container-2 .media .box-3 {
+            height: 20%;
+        }
+        .container-3  {
+            padding-top: 93rem;
+        }
+            [class*="row-"] {
+            display: block;
+        }
+        .row-2 .left-text-box {
+            padding-left: 2.55rem;
+            padding-top: 6.555rem;
+        }
+        .row-1 .left-column p,
+        .row-3 .left-column p {
+            padding-bottom: 3rem;
+        }
+        .footer-items {
+            width: 100%;
+        }
+        label {
+            width: 30%;
+        }
+        .btn {
+            display: inline;
+            width: 100%;
         }
     }
