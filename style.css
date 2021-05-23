@@ -6,11 +6,11 @@
 
     html {
         height: 100%;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     body {
-        max-width: 1920px;
+        max-width: 106.6667rem;
         min-height: 100%;
         margin: 0 auto;
         }
@@ -363,7 +363,7 @@
         }
     
     .email {
-        padding-top: 19px;
+        padding-top: 1.0556rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -421,7 +421,7 @@
     footer p:not(#item-3-contact) {
         font-weight: 700;
     }
-    @media all and (max-width: 1340px){
+    @media all and (max-width: 74.4444rem){
 
         .row-1 .left-column,
         .row-2 .left-text-box,
@@ -455,10 +455,10 @@
         }
     }
 
-    @media all and (max-width: 1230px) {
+    @media all and (max-width: 68.3333rem) {
 
         html {
-            font-size: 14px;
+            font-size: 0.7778rem;
         }
 
         #item-3-contact,
@@ -472,10 +472,10 @@
             padding-right: 1.6667rem;
         }
     }
-    @media all and (max-width: 900px) {
+    @media all and (max-width: 50rem) {
 
         html {
-            font-size: 11px;
+            font-size: 0.6111rem;
         }
 
         header {
@@ -546,10 +546,10 @@
             padding-bottom: 0.1667rem;
         }
     }
-    @media all and (max-width: 670px)  {
+    @media all and (max-width: 37.2222rem)  {
 
         html {
-            font-size: 8px;
+            font-size: 0.4444rem;
         }
 
         .icons i {
@@ -557,7 +557,7 @@
         }
 
         .icons {
-            padding-right: 20px;
+            padding-right: 1.1111rem;
         }
 
         a,
@@ -565,14 +565,14 @@
         .container-1 .right-column a,
         .container-2 .media  .box-3 a,
         #item-3-contact{
-            font-size: 17px;
+            font-size: 0.9444rem;
         }
 
         .footer-items {
             width: 100%;
         }
     }
-    @media all and (max-width: 513px) {
+    @media all and (max-width: 28.5rem) {
 
         body {
             width: 100%;
@@ -650,7 +650,7 @@
 
     #main-contact .contacts-container-1 p {
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 72px;
+        font-size: 4rem;
         font-weight: 900;
         margin-bottom: 1.8889rem;
     }
@@ -673,7 +673,7 @@
     }
 
     .contacts-container-2 h5 {
-        font-size: 25px;
+        font-size: 1.3889rem;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 900;
         color: #060606
@@ -698,15 +698,15 @@
     
     .contacts-container-2 input,
     .contacts-container-2 ::placeholder  {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        padding-left: 30px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.6667rem;
     }
 
     .contacts-container-2 ::placeholder {
         color: #969696;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 900;
     }
 
@@ -722,12 +722,38 @@
         text-decoration: none;
         text-align: center;
         width: 31%;
-        font-size: 25px;
+        font-size: 1.3889rem;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 900;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-right: 88px;
-        padding-left: 88px;
-        margin-top: 50px;
+        padding-top: 0.8889rem;
+        padding-bottom: 0.8889rem;
+        padding-right: 4.8889rem;
+        padding-left: 4.8889rem;
+        margin-top: 2.7778rem;
+    }
+
+    .contacts-container-3 {
+        width: 100%;
+        display: flex;
+        gap: 5.8333rem;
+        background-color: #69779B;
+        color: #FFFFFF;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
+        padding-bottom: 0;
+    }
+
+    .contacts-container-3 p {
+        padding-top: 1.3333rem;
+        font-size: 1rem;
+    }
+
+    .contacts-container-3 .cities {
+        padding-top: 5.8889rem;
+        padding-left: 5.9444rem;
+        padding-bottom: 4.7222rem;
+    }
+
+    #contact-footer {
+        margin-top: 0;
     }
