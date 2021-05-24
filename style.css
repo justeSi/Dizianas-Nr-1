@@ -6,7 +6,7 @@
 
     html {
         height: 100%;
-        font-size: 1rem;
+        font-size: 18px;
     }
 
     body {
@@ -399,12 +399,6 @@
         cursor: pointer;
     }
 
-    #item-3-contact {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 0.8889rem;
-        line-height: 1.8889rem;
-    }
-
     .fas {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
@@ -421,7 +415,8 @@
     footer p:not(#item-3-contact) {
         font-weight: 700;
     }
-    @media all and (max-width: 74.4444rem){
+
+    @media all and (max-width: 1340px){
 
         .row-1 .left-column,
         .row-2 .left-text-box,
@@ -455,10 +450,10 @@
         }
     }
 
-    @media all and (max-width: 68.3333rem) {
+    @media all and (max-width: 1230px) {
 
         html {
-            font-size: 0.7778rem;
+            font-size: 14.0004px;
         }
 
         #item-3-contact,
@@ -472,10 +467,10 @@
             padding-right: 1.6667rem;
         }
     }
-    @media all and (max-width: 50rem) {
+    @media all and (max-width: 900px) {
 
         html {
-            font-size: 0.6111rem;
+            font-size: 10.9998px;
         }
 
         header {
@@ -546,10 +541,10 @@
             padding-bottom: 0.1667rem;
         }
     }
-    @media all and (max-width: 37.2222rem)  {
+    @media all and (max-width: 670px)  {
 
         html {
-            font-size: 0.4444rem;
+            font-size: 7.9992px;
         }
 
         .icons i {
@@ -572,10 +567,14 @@
             width: 100%;
         }
     }
-    @media all and (max-width: 28.5rem) {
+    @media all and (max-width: 513px) {
 
         body {
             width: 100%;
+        }
+
+        header h1 {
+            padding-right: 0;
         }
 
         .container-1 {
@@ -619,6 +618,12 @@
         
     }
     /* ===== CONATCT US ========= */
+
+    #item-3-contact {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.8889rem;
+    }
 
     #header .left-column h1 {
         padding-bottom: 8.8333rem;
@@ -697,7 +702,7 @@
     }
     
     .contacts-container-2 input,
-    .contacts-container-2 ::placeholder  {
+    .contacts-container-2 textarea::placeholder  {
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 1.6667rem;
@@ -735,7 +740,6 @@
     .contacts-container-3 {
         width: 100%;
         display: flex;
-        gap: 5.8333rem;
         background-color: #69779B;
         color: #FFFFFF;
         font-family: 'Source Sans Pro', sans-serif;
