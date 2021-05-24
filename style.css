@@ -20,6 +20,10 @@
         grid-template-columns: 56% 1fr;
         width: 100%;
     }
+
+    .clearfix {
+        overflow: auto;
+    }
     
     header .left-column {
         background-color: black;
@@ -467,7 +471,7 @@
             padding-right: 1.6667rem;
         }
     }
-    @media all and (max-width: 900px) {
+    @media all and (max-width: 960px) {
 
         html {
             font-size: 10.9998px;
@@ -541,10 +545,10 @@
             padding-bottom: 0.1667rem;
         }
     }
-    @media all and (max-width: 670px)  {
+    @media all and (max-width: 755px)  {
 
         html {
-            font-size: 7.9992px;
+            font-size: 9px;
         }
 
         .icons i {
@@ -590,7 +594,7 @@
         }
 
         .container-3  {
-            padding-top: 93rem;
+            /* padding-top: 93rem; */
         }
 
         [class*="row-"]:not(.fas) {
@@ -617,6 +621,7 @@
         }
         
     }
+
     /* ===== CONATCT US ========= */
 
     #item-3-contact {
@@ -636,16 +641,24 @@
         position: relative;
     }
 
-    #header .left-column .meniu {
+    #header .left-column .menu {
+        text-transform: uppercase;
         color: #FFFFFF;
         float: right;
         padding-top: 2.1667rem;
         padding-right: 6.0556rem;
         cursor: pointer;
     }
-    
-    #header .left-column .meniu ul {
+
+    .list {
         display: none;
+    }
+
+    .menu-active {
+        display: inline;
+        float: right;
+        padding-top: 1.8rem;
+        padding-right: 0.8333rem;
     }
 
     #main-contact {
@@ -702,10 +715,12 @@
     }
     
     .contacts-container-2 input,
-    .contacts-container-2 textarea::placeholder  {
+    .contacts-container-2 textarea::placeholder,
+    input:focus, textarea:focus, select:focus {
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 1.6667rem;
+        outline: none;
     }
 
     .contacts-container-2 ::placeholder {
@@ -715,12 +730,12 @@
         font-weight: 900;
     }
 
-    .contacts-container-2 textarea::placeholder :focus {
-        border: none;
+    .contacts-container-2 textarea:focus ::placeholder  {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 900;
+        outline: none;
     }
-
+    
     .contacts-container-2 a{
         background-color: #060606;
         color: #F8F8F8;
@@ -740,6 +755,8 @@
     .contacts-container-3 {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
         background-color: #69779B;
         color: #FFFFFF;
         font-family: 'Source Sans Pro', sans-serif;

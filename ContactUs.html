@@ -16,13 +16,14 @@
     <header id="header">
         
         <div class="left-column" >
-            <span class="meniu">Menu
-                <ul>
-                    <li><a href="index.html" class="psl">01</a></li>
-                    <li><a href="#" class="psl">02</a></li>
-                    <li><a href="#" class="psl">03</a></li>
-                </ul>
-            </span>
+          
+            <span class="menu">Menu</span>
+            <ul class="list">
+                <li><a href="index.html" class="psl">01</a></li>
+                <li><a href="#" class="psl">02</a></li>
+                <li><a href="#" class="psl">03</a></li>
+            </ul> 
+            
             <h1>Contact us</h1>
             
         </div>
@@ -85,16 +86,7 @@
             
         
     </footer>
-    <script>
-        window.onload = (event) => {
-            var href = document.querySelector('a').getAttribute('href');
-    console.log('href = ', href);
-    if (href == 'index.html'){
-        document.querySelector('a').classList.add('active');
-    }
-};
-
-        
+    <script src="app.js">
     </script>
 </body>
 </html>
