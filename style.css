@@ -275,6 +275,7 @@
         max-width: 100%;
         max-height: auto;
         object-fit: cover;
+        min-height: 100%;
     }
 
     .row-2 {
@@ -405,6 +406,7 @@
 
     .btn {
         background-color: #060606;
+        font-family: SourceSansPro-Black;
         border: none;
         cursor: pointer;
         color: #FFFFFF;
@@ -605,6 +607,15 @@
         .footer-items {
             width: 100%;
         }
+
+        header .left-column li a,
+        header .right-column a,
+        .grid-container .container-1 .right-column a,
+        .container-2  .media .box-3 a,
+        .footer-items .email,
+        #item-3-contact {
+            font-size: 1.5rem;
+        }
     }
     @media all and (max-width: 570px) {
 
@@ -633,10 +644,6 @@
             height: 20%;
         }
 
-        .container-3  {
-            margin-top: 1.6667rem;
-        }
-
         [class*="row-"]:not(.fas) {
             display: block;
         }
@@ -659,7 +666,18 @@
             display: inline;
             width: 100%;
         }
-        
+    }
+
+    @media all and (max-width: 500px) {
+        .row-2 .left-text-box {
+            width: 69%;
+        }
+
+        .icons {
+            position: static;
+            gap: 6rem;
+            justify-content: flex-start;
+        }
     }
 
     /* ===== CONATCT US ========= */
