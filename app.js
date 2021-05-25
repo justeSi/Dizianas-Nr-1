@@ -7,4 +7,4 @@ document.querySelector('.menu').onclick = function() {
     document.querySelector('.list').classList.toggle('menu-active');
 
     console.log('%c%s', 'color: #006dcc', 'labas');
- }
+}

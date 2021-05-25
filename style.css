@@ -962,7 +962,7 @@ input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
-.contacts-container-2 a{
+.contacts-container-2 a {
     background-color: #060606;
     color: #F8F8F8;
     text-decoration: none;
@@ -1012,6 +1012,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 @media all and (max-width: 1508px) {
+
     .contacts-container-3 {
         -webkit-column-gap: 2rem;
             -moz-column-gap: 2rem;
