@@ -1,5 +1,5 @@
 
-        console.log("The URL of this page is: " + window.location.href);
+console.log("The URL of this page is: " + window.location.href);
 
 
 document.querySelector('.menu').onclick = function() {
