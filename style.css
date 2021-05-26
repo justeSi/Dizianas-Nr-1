@@ -792,7 +792,7 @@ footer p:not(#item-3-contact) {
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
     .row-2 .left-text-box {
         width: 100%;
     }
@@ -800,7 +800,7 @@ footer p:not(#item-3-contact) {
     .icons {
         position: static;
         padding-left: 7rem;
-        gap: 6rem;
+        gap: 3rem;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -928,36 +928,7 @@ footer p:not(#item-3-contact) {
     font-weight: 900;
 }
 
-/* .contacts-container-2 textarea::-webkit-input-placeholder {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.6667rem;
-    outline: none;
-}
-
-.contacts-container-2 textarea::-moz-placeholder {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.6667rem;
-    outline: none;
-}
-
-.contacts-container-2 textarea:-ms-input-placeholder {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.6667rem;
-    outline: none;
-}
-
-.contacts-container-2 textarea::-ms-input-placeholder {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.6667rem;
-    outline: none;
-} */
-
 .contacts-container-2 input,
-/* .contacts-container-2 textarea::placeholder, */
 input:focus:not(.email-input), textarea:focus, select:focus {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1101,7 +1072,11 @@ input:focus:not(.email-input), textarea:focus, select:focus {
         padding-left: 5rem;
     }
 }
-@media all and (max-width: 615px) {
+@media all and (max-width: 799px) {
+
+    .contacts-container-1 h2 {
+        display: inline-block;
+    }
 
     .contacts-container-1 p{
         width: 100%;
@@ -1109,11 +1084,16 @@ input:focus:not(.email-input), textarea:focus, select:focus {
     }
 
     .contacts-container-2 {
+        width: 100%;
         -ms-grid-rows: auto;
         -ms-grid-columns: 100%;
             grid-template: auto / 100%;
         place-items: center;
         row-gap: 15px;
+    }
+    .contacts-container-2 > input,
+    .contacts-container-2 > textarea {
+        width: 80%;
     }
 
     .contacts-container-2 ::-webkit-input-placeholder {
@@ -1149,6 +1129,7 @@ input:focus:not(.email-input), textarea:focus, select:focus {
     }
     .contacts-container-3 .cities {
         padding-top: 0.5556rem;
+        padding-left: 0;
         text-align: center;
         
     }
