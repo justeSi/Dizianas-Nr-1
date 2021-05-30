@@ -3,8 +3,7 @@ console.log("The URL of this page is: " + window.location.href);
 
 
 document.querySelector('.menu').onclick = function() {
-    this.classList.toggle('menu-active');
-    document.querySelector('.list').classList.toggle('menu-active');
+    this.classList.toggle('list-active');
+    document.querySelector('.list').classList.toggle('list-active');
 
-    console.log('%c%s', 'color: #006dcc', 'labas');
 }
