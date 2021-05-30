@@ -109,9 +109,9 @@ header ul > li > a {
     color: #505050;
 }
 
-header ul > li > a:hover {
+/* header ul > li > a:hover {
     color: #fff;
-}
+} */
 
 .active {
     color: #f5a623;
@@ -848,16 +848,40 @@ footer p:not(#item-3-contact) {
 
 .list {
     display: none;
+    width: 100%;
     float: right;
     padding-top: 1.8rem;
     padding-right: 0.8333rem;
 }
 
+header ul > li,
+.list li {
+    position: relative;
+    padding-top: 0.7222rem;
+}
+
 .list-active {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     float: right;
     padding-top: 1.8rem;
     padding-right: 0.8333rem;
+}
+header ul > li > a::before,
+.list a::before {
+    content: '';
+    display: block;
+    height: 0.2778rem;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    background-color: #f5a623;
+    transition: all ease-in-out 250ms;
+}
+
+.list a:hover::before,
+header ul > li > a:hover::before {
+    width: 100%;
 }
 
 #main-contact {
