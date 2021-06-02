@@ -109,10 +109,6 @@ header ul > li > a {
     color: #505050;
 }
 
-/* header ul > li > a:hover {
-    color: #fff;
-} */
-
 .active {
     color: #f5a623;
 }
@@ -395,7 +391,7 @@ footer {
     flex-direction: column;
 }
 
-span {
+span:not(.icon) {
     color: #f5a623;
 }
 
@@ -574,6 +570,9 @@ footer p:not(#item-3-contact) {
     html {
         font-size: 14.0004px;
     }
+    #header .menu-bar .menu {
+        font-size: 0.7778rem;
+    }
 
     .media-box {
         width: 100%;
@@ -675,7 +674,7 @@ footer p:not(#item-3-contact) {
     html {
         font-size: 10px;
     }
-
+    
     .icons i {
         font-size: medium;
     }
@@ -821,7 +820,8 @@ footer p:not(#item-3-contact) {
 
 #header .left-column h1 {
     padding-bottom: 8.8333rem;
-    /* padding-left: 5.8333rem; */
+    padding-left: 5.8333rem;
+    padding-top: 10.2222rem;
 }
 
 #header {
@@ -830,14 +830,24 @@ footer p:not(#item-3-contact) {
     position: relative;
 }
 
+.navbar-component {
+    width: 100%;
+    background-color: #060606;
+    position: absolute;
+}
+
 .menu-bar {
     background-color: #060606;
-    padding-bottom: 2.1667rem;
+    /* padding-bottom: 2.1667rem; */
+    color: #ffffff;
     }
 
-#header .menu-bar .menu {
+#header .navbar-component .menu {
+    border: none;
+    background-color: #060606;
     display: block;
     font-family: SourceSansPro-Bold;
+    font-size: 0.7778rem;
     text-transform: uppercase;
     color: #ffffff;
     float: right;
@@ -846,11 +856,15 @@ footer p:not(#item-3-contact) {
     cursor: pointer;
 }
 
+#header ul li {
+    font-size: 1.8rem;
+}
+
 .list {
     display: none;
     width: 100%;
     float: right;
-    padding-top: 1.8rem;
+    padding-top: 1.7rem;
     padding-right: 0.8333rem;
 }
 
@@ -881,7 +895,7 @@ header ul > li > a::before,
 
 .list a:hover::before,
 header ul > li > a:hover::before {
-    width: 100%;
+    width: 90%;
 }
 
 #main-contact {
@@ -1094,11 +1108,23 @@ header ul > li > a:hover::before {
         padding-left: 5rem;
     }
 }
-@media all and (max-width: 799px) {
+@media all and (max-width: 755px) {
+    html {
+        font-size: 12px;
+    }
+    #main-contact .contacts-container-1 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
 
     #header .left-column h1 {
         font-size: 4rem;
         padding-left: 3rem;
+    }
+
+    #header ul li a {
+        font-size: 2.2rem;
     }
 
     .contacts-container-1 h2 {
@@ -1139,15 +1165,19 @@ header ul > li > a:hover::before {
         font-size: 1.5rem;
     }
 
+    .contacts-container-2 h5 {
+        text-align: center;
+    }
+
     .contacts-container-2 h5,
-    .contacts-container-2 ::placeholder,
-    .contacts-container-2 a {
-        font-size: 1.5rem;
+    .contacts-container-2 ::placeholder {
+        font-size: 1.4rem;
     }
 
     .contacts-container-2 a {
         padding-right: 0;
         padding-left: 0;
+        font-size: 2rem;
     }
 
     .contacts-container-3 {
@@ -1167,12 +1197,12 @@ header ul > li > a:hover::before {
     }
 }
 
-@media all and (max-width: 466px) {
-    #main-contact .contacts-container-1 {
-        width: 100%;
-        display: grid;
-        place-items: center;
+@media all and (max-width: 500px) {
+    
+    #header .menu-bar .menu {
+        vajeeezau...;
     }
+
     #header .left-column h1 {
         font-size: 4rem;
         padding-left: 3rem;
@@ -1274,7 +1304,7 @@ aside .search i {
 }
 
 .side-img {
-   
+    
     width: 100%;
     display: grid;
     grid-template: repeat(5, auto) / 30% 70%;
@@ -1282,6 +1312,7 @@ aside .search i {
 }
 
 .side-img img {
+    
     object-fit: cover;
     min-height: 100%;
 }
