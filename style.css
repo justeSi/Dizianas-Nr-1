@@ -1018,6 +1018,13 @@ aside li {
 }
 
 /* =========@MEDIA========== */
+@media all and (max-width: 1745px) {
+    #blog {
+        grid-template-columns: auto auto;
+        column-gap: 7rem;
+    }
+}
+
 @media all and (max-width: 1600px) {
     .footer-items {
         -ms-grid-columns: auto auto;
@@ -1086,6 +1093,15 @@ aside li {
     }
 }
 
+@media all and (max-width: 1375px) {
+    #blog  {
+        grid-template-columns: 29% auto;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
 @media all and (max-width: 1303px) {
 
     .contacts-container-3 {
@@ -1104,7 +1120,9 @@ aside li {
     html {
         font-size: 14.0004px;
     }
-
+    #blog p {
+        font-size: 18px;
+    }
     #header .navbar-component .menu {
         font-size: 1rem;
     }
@@ -1116,6 +1134,8 @@ aside li {
         width: 100%;
         height: auto;
     }
+
+    
     
     .container-2 .media .box-3 {
         padding: 2rem 0;
@@ -1155,6 +1175,14 @@ aside li {
 
     html {
         font-size: 14px;
+    }
+    
+    #blog p {
+        font-size: 18px;
+    }
+
+    .blog-container-1 {
+        grid-row: 2;
     }
 
     header {
@@ -1286,10 +1314,14 @@ aside li {
     .item-3 {
         padding-bottom: 0.1667rem;
     }
+
+    #blog {
+        grid-template-columns: 100%;
+    }
 }
 
 @media all and (max-width: 930px) {
-    
+
     .contacts-container-2 a {
         padding-right: 0;
         padding-left: 0;
@@ -1537,7 +1569,4 @@ aside li {
     .footer-items {
         padding-left: 3rem;
     }
-
-
-    
 }
