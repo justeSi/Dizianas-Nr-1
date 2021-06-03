@@ -9,9 +9,7 @@ document.querySelector('.menu').onclick = function() {
 
 var windowWidth = document.documentElement.clientWidth;
 if(windowWidth <= '1920') {
-    // console.log('Ekranas mazesnis nei 786');
     document.querySelector('.left-column').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + 'px';
-    // console.log('navbar komponento aukstis' + document.querySelector('.navbar-component').offsetHeight + ' ');
 } else {
     document.querySelector('.left-column').style.paddingTop = 0;
 }
@@ -20,11 +18,8 @@ if(windowWidth <= '1920') {
 window.addEventListener('resize', function() {
 var windowWidth = document.documentElement.clientWidth;
 if(windowWidth <= '1920') {
-    // console.log('Ekranas mazesnis nei 786');
     document.querySelector('.left-column').style.paddingTop = document.querySelector('.navbar-component').offsetHeight + 'px';
-    // console.log('navbar komponento aukstis' + document.querySelector('.navbar-component').offsetHeight + ' ');
 } else {
     document.querySelector('.left-column').style.paddingTop = 0;
 }
-//console.log('Ekrano plotis  ' + windowWidth + 'px');
 })
