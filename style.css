@@ -942,7 +942,7 @@ aside .search i {
     min-height: 100%;
 }
 
-.txt {
+.side-img-item-txt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -953,7 +953,7 @@ aside .search i {
     row-gap: 1.2778rem;
 }
 
-.txt p {
+.side-img-item-txt p {
     color: #787878;
     font-family: SourceSansPro-SemiBold;
     font-size: 1rem;
@@ -1466,7 +1466,7 @@ aside li {
         grid-template-columns: 40% auto;
     }
 
-    .txt {
+    .side-img-item-txt {
         padding-top: 1rem;
         row-gap: 0;
         -webkit-box-pack: justify;
